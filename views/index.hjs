@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="twitPicApp">
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+        <h1>TwitPic</h1>
+        <div class="content">
+            <div class="basic-content" ng-view></div>
+        </div>
+    </div>
+    <script src="/javascripts/lib/angular.js"></script>
+    <script src="/javascripts/app.js"></script>
+  </body>
+</html>
