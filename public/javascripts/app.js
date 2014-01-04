@@ -7,6 +7,10 @@ twitPicApp.config(function ($routeProvider, $locationProvider) {
             templateUrl: '/partials/auth.html',
             controller: 'AuthController'
         }).
+        when('/timeline', {
+            templateUrl: '/partials/timeline.html',
+            controller: 'TimelineController'
+        }).
         otherwise({
             redirectTo: '/auth'
         });
