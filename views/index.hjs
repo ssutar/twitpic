@@ -17,7 +17,6 @@
         </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/javascripts/lib/jquery.cookie.js"></script>
     <script src="/javascripts/lib/oauth.js"></script>
     <script src="/javascripts/lib/angular.js"></script>
     <script src="/javascripts/lib/angular-route.min.js"></script>
