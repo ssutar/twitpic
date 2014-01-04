@@ -7,6 +7,7 @@ twitPicApp.controller('AuthController', function ($scope, $rootScope, $location)
             if (err) {
                 return alert(err);
             }
+            $.cookie('auth', JSON.stringify(res), { expires: 7, path: '/' });
             $rootScope.twitter = res;
             $location.path('/timeline');
             $scope.$apply();

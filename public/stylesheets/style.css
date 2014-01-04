@@ -1,12 +1,109 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
-a {
-  color: #00B7FF;
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 */
+* {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: normal;
+  background: #eee;
+  color: #fff;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+ul,
+ol {
+  padding: 0;
+}
+.navbar-title {
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.page-title {
+  font-size: 96px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: #000;
+}
+.section-title {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #333;
+  text-shadow: 0px 1px 8px #ccc;
+}
+.btn {
+  display: inline-block;
+  background: #AC193D;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  margin: 0;
+  padding: 32px 48px;
+  outline: 0;
+  letter-spacing: 0.025em;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 32px;
+}
+.btn:hover,
+.btn:active {
+  background: #df3162;
+}
+.wrapper {
+  padding: 48px 0;
+}
+.wrapper.dark {
+  background: #222222;
+}
+.wrapper.dark-blue {
+  background: #373E45;
+}
+.navbar {
+  background: #111;
 }
 .picture {
   display: block;
   list-style-type: none;
   float: left;
+  height: 48px;
 }
