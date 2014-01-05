@@ -1,6 +1,8 @@
 <h2 class="section-title">Profile Pictures</h2>
 <ul id="timeline" class="clearfix">
     <li class="picture" ng-repeat="entry in results">
-        <img class="thumb" src="{{entry.user.profile_image_url}}" />
+        <a href="http://twitter.com/{{ entry.user.screen_name }}" title="{{ entry.user.name }}" target="_blank">
+            <img class="thumb" src="{{entry.user.profile_image_url}}" alt="{{ entry.user.name }}">
+        </a>
     </li>
 </ul>

@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1024px;
     margin: 0 auto;
     padding: 8px 0;
 }
@@ -104,4 +104,78 @@ ul, ol {
     list-style-type: none;
     float: left;
     height: 48px;
+}
+
+/* 
+Ideally these rules should be in separate file included via import,
+Since the rules are less including here makes sense
+*/
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media only screen and (max-width: 767px) {
+    
+    .container {
+        width: 100%;
+        padding: 8px;
+    }
+    
+    .navbar-title {
+        font-size: 16px;
+    }
+    
+    .page-title {
+        font-size: 48px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+    
+    .wrapper {
+        padding: 24px 0;
+    }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  /* some CSS here */
+    .container {
+        width: 100%;
+        padding: 8px 16px;
+    }
+    
+    .navbar-title {
+        font-size: 24px;
+    }
+    
+    .page-title {
+        font-size: 72px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .btn {
+        font-size: 24px;
+        padding: 24px 36px;
+    }
+    
+    .wrapper {
+        padding: 36px 0;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+    .container {
+        width: 1200px;
+    }
 }
