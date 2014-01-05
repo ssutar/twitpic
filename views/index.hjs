@@ -8,7 +8,7 @@
   <body>
     <div class="navbar">
         <div class="container">
-            <h1 class="navbar-title">TwitPic</h1>
+            <h1 class="navbar-title"><a href="/">TwitPic</a></h1>
         </div>
     </div>
     <div class="wrapper">

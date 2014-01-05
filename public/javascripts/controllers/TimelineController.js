@@ -9,6 +9,6 @@ twitPicApp.controller('TimelineController', function($scope, $rootScope, $locati
             });
     }
     else {
-        $location.path( "/auth" );
+        $location.path('/auth');
     }
 });
